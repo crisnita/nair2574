@@ -32,12 +32,13 @@ public class InventoryRepository {
 				if (part!=null)
 					listP.add(part);
 			}
-			br.close();
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 		inventory.setAllParts(listP);
 	}
 

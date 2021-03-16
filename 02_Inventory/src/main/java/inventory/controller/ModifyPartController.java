@@ -29,9 +29,8 @@ public class ModifyPartController implements Initializable, Controller {
     private Stage stage;
     private Parent scene;
     private int partIndex= getModifyPartIndex();
-    private String errorMessage = new String();
+    private String errorMessage;
     private boolean isOutsourced;
-    private int partId;
 
     private InventoryService service;
     
@@ -75,7 +74,6 @@ public class ModifyPartController implements Initializable, Controller {
     private void fillWithData(){
         Part part = service.getAllParts().get(partIndex);
 
-        partId = service.getAllParts().get(partIndex).getPartId();
         partIdTxt.setText(Integer.toString(part.getPartId()));
         nameTxt.setText(part.getName());
         inventoryTxt.setText(Integer.toString(part.getInStock()));
