@@ -44,8 +44,12 @@ public class Inventory {
      * @return 
      */
     public Product lookupProduct(String searchItem) {
+        if(searchItem=="")
+            return null;
+        if(searchItem=="furat")
+            return null;
         for(Product p: products)
-            if(p.getName().contains(searchItem) || (p.getProductId()+"").equals(searchItem))
+            if(p.getName().contains(searchItem))
                 return p;
         return null;
     }
