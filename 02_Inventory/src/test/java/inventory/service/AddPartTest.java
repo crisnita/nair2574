@@ -121,4 +121,6 @@ class AddPartTest {
         Part parte= inventoryRepository.getAllParts().get(0);
         assertEquals(inhousePart.getName(),parte.getName());
     }
+
+
 }

@@ -13,12 +13,17 @@ public class InventoryRepository {
 	private static String filename = "data/items.txt";
 	private Inventory inventory;
 
+	public InventoryRepository(Inventory inventory){
+		this.inventory=inventory;
+		readParts();
+		readProducts();
+	}
+
 	public InventoryRepository(){
 		this.inventory=new Inventory();
 		readParts();
 		readProducts();
 	}
-
 	public void readParts(){
 		ClassLoader classLoader = InventoryRepository.class.getClassLoader();
 		File file = new File(classLoader.getResource(filename).getFile());
@@ -195,9 +200,10 @@ public class InventoryRepository {
 		return inventory.lookupProduct(search);
 	}
 
-	public void updatePart(int partIndex, Part part){
+	public Part updatePart(int partIndex, Part part){
 		inventory.updatePart(partIndex, part);
 		writeAll();
+		return part;
 	}
 
 	public void updateProduct(int productIndex, Product product){

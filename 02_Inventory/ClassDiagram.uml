@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="954.0">inventory.repository.InventoryRepository</node>
+    <node x="1495.0" y="954.0">inventory.service.InventoryService</node>
+    <node x="992.0" y="954.0">inventory.model.Product</node>
+    <node x="269.0" y="1474.0">inventory.Main</node>
+    <node x="0.0" y="1474.0">inventory.model.Inventory</node>
+    <node x="472.25" y="954.0">inventory.model.Part</node>
+    <node x="0.0" y="236.0">inventory.controller.AddPartController</node>
+    <node x="290.0" y="126.0">inventory.controller.AddProductController</node>
+    <node x="296.0" y="1236.0">inventory.model.OutsourcedPart</node>
+    <node x="656.0" y="203.0">inventory.controller.ModifyPartController</node>
+    <node x="954.0" y="115.0">inventory.controller.MainScreenController</node>
+    <node x="715.5" y="0.0">inventory.controller.Controller</node>
+    <node x="1313.0" y="104.0">inventory.controller.ModifyProductController</node>
+    <node x="650.0" y="1236.0">inventory.model.InhousePart</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="inventory.controller.AddPartController" target="inventory.controller.Controller">
+      <point x="0.0" y="-270.5" />
+      <point x="135.0" y="74.0" />
+      <point x="731.4" y="74.0" />
+      <point x="-63.60000000000002" y="27.0" />
+    </edge>
+    <edge source="inventory.model.InhousePart" target="inventory.model.Part">
+      <point x="0.0" y="-50.0" />
+      <point x="798.5" y="1211.0" />
+      <point x="710.0" y="1211.0" />
+      <point x="79.25" y="116.0" />
+    </edge>
+    <edge source="inventory.controller.MainScreenController" target="inventory.controller.Controller">
+      <point x="0.0" y="-391.5" />
+      <point x="1123.5" y="84.0" />
+      <point x="826.8" y="84.0" />
+      <point x="31.799999999999955" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.ModifyProductController" target="inventory.controller.Controller">
+      <point x="0.0" y="-402.5" />
+      <point x="1485.5" y="74.0" />
+      <point x="858.6" y="74.0" />
+      <point x="63.60000000000002" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.AddProductController" target="inventory.controller.Controller">
+      <point x="0.0" y="-380.5" />
+      <point x="463.0" y="84.0" />
+      <point x="763.2" y="84.0" />
+      <point x="-31.799999999999955" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.ModifyPartController" target="inventory.controller.Controller">
+      <point x="0.0" y="-303.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.model.OutsourcedPart" target="inventory.model.Part">
+      <point x="0.0" y="-50.0" />
+      <point x="463.0" y="1211.0" />
+      <point x="551.5" y="1211.0" />
+      <point x="-79.25" y="116.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1205.3888888888891" y="603.3333333333335" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

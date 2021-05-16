@@ -61,9 +61,10 @@ public class InventoryService {
         return repo.lookupProduct(search);
     }
 
-    public void updateInhousePart(int partIndex, int partId, String name, double price, int inStock, int min, int max, int partDynamicValue){
+    public Part updateInhousePart(int partIndex, int partId, String name, double price, int inStock, int min, int max, int partDynamicValue){
         InhousePart inhousePart = new InhousePart(partId, name, price, inStock, min, max, partDynamicValue);
         repo.updatePart(partIndex, inhousePart);
+        return inhousePart;
     }
 
     public void updateOutsourcedPart(int partIndex, int partId, String name, double price, int inStock, int min, int max, String partDynamicValue){
